@@ -4,3 +4,12 @@ teste for repository tests.
 escrevendo algo para ser `commitado`
 
 Changing some thing here to commit it.
+
+
+testing the current repo
+
+teste
+
+more some thing
+
+and other thing 
