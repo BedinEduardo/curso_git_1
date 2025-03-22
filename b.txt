@@ -6,10 +6,8 @@ More one thing, and removing other thing.
 
 opa
 
-<<<<<<< HEAD
-one more test.
-
-One more test here.
-=======
 Adding one more thing here to git it.
->>>>>>> main
+
+addin gf
+
+adding 
