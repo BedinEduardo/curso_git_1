@@ -1,0 +1,257 @@
+# What is a version control?
+
+* One thechinique that helps to **manage the source code** in some application
+* Resister **all modifications** in the code, could reverse the same
+* Build software versions in diferent stages, and could **to change between them**
+* All team member can work in a diferent version
+* There is tools that is possible to control the versio: **git** and SVN
+
+To test and validate each step in the software development.
+
+To make easy to control de code/software/project versions. It is a problem when a version control did not exist. Reability, security, and control are the main reasons to use a version control.
+
+# What is git?
+
+* It is the system control version **more used in the world** 
+* The git is based on **repositories** , that contains all the code versions e and also each developer version
+* All the git operations **are optimized to have high performance**
+* All the git objects are **protected by criptography** to avoid undue modifications and malicius.
+* Git is a **open source projects**
+
+
+When starts a project, it is necessary to initialize a repositoy for this project.
+Git start - the characteristics of the project are defined, and the project is ready to start.
+When someone download the reporistory, the person wiil have a copy of the project in the local machine.
+
+Git is the tool to aversion the code, and GitHub is a server the store the code. The git is a tool to manage the code, and GitHub is a server to store the code.
+
+# Git Fundamentals commands
+
+## What is a repository?
+
+* It is a **folder** where the code will be **sotored**
+* In the major of the cases each project has a **repository**
+* When a repository is built a project is started
+* The repositoy can be saved in servers that are specialized in version control, like **GitHub** and **GitLab** and **Bitbucket**
+* Each developer can download the repository and **build different versions** in their machines
+
+To work with repository clonning, it is necessary to use the command `git clone` and the URL of the repository.
+
+## Building a repository 
+* to build a repositoty is used the command	`git init`
+* In this way the *git* will build the files needed to initialize the repository
+* This files are in the `.git` folder
+* After this commnad the current directory **will be recognized for the git as a project** and it will respond to the git commands
+
+## What is a Git Hub?
+* It is a **service to manage repositories**, free and large used
+* It is **possible to send the projects** to the GitHub and **share with other developers**
+* The GiHub is free	for public and also **privates** operations
+* Let's build a count in https://github.com
+
+## Sending repositories to GitHub
+* It is easy to send a repository to GitHub
+* It is needed to build the project in GitHub, initialize it in the local machine, to sincronize it with the GH and send the project.
+* This sequence is executed using fewer commands
+* It is import to remember **it is done only once** this flow
+* Although some used commnads will be useful across the course
+
+## Checking changes in the repository / project
+* The projects change cna be checked using: `git status`
+* This command is used `very frequently` to check the changes in the project
+* Here will be maped all the modifications in the project
+* Like: **files not monitored** and **files modified**
+* It is possible to say that the **difference** between the already deposited in the server and saved in the project.
+
+## Adding files in the project
+* To add new files to a project is used `git add`
+* It is possible add a specifc **file** as also **sevral files once**
+* Only adding files they will be monitored by the git
+* Or welcome, **if it was not added** it will not be in version control
+* It is interessant use this command from time to times, to not loose some thing for carelessness.
+
+## Saving the project alterations
+* The saved project modifications are made using the command `git commit`
+* It is possible to commit **specific files** or **all files** using the flag `-a`
+* It is a good practice to send **a message to each commit**, with the alterations made
+* The message can be add with the flag `-m` and the message
+
+## Sending the code to remote reporistory
+* When is finalized a new functionality, **it is send to the remote repository**, that is the source code.
+* This action is made using `git push`
+* After this action **the code will be updated using the local code as base**.
+
+## Receiving the modifications
+* It is common to **sincronize the local** with the remoto modifications
+* This action is made using `git pull`
+* After this command it will **be searched the updates**, it these were found they **will unified at actual code**  in local machine.
+
+## Cloning a repository
+* The act of download a repository that exist in a remote server is called **repositoty clonning**
+* To this action is used the command `git clone` and the URL of the repository
+* It is necessary to pass the remote repository **reference** 
+* This command is used when **start work in a new project** or **when a new developer starts to work in a project**.
+
+## Removing files from the project / reporistory
+* The files **can be deelted by the git monitoring** 
+* The command is `git rm`
+* After deleting some file from git this file will not anymore has the updates by the git
+* Only when it is added again it will be monitored by the **git**
+
+## Modifications history
+* We can **access a modification log**  done in the project
+* The used command is `git log`
+* It send a notification **commits made** in the project
+
+## Renaming the files
+* With the line command `git mv` it is possible to **rename files**
+* The same commnad is used to move the file to another directory
+* This action will made that the file will **be monitoried by the git** in the new directory
+* The last directory will be **deleted from the git monitoring**
+
+## Undoing changes
+* The modified file can be **returned to the oringinal status**
+* The line command used is `git checkout`
+* After the usage of this command the file or folder get out by **staying**.
+* If it is some next modification, this file/folder come in into **staying** again.
+
+## Ignoring files in the project
+* One techinique most used is **ignore files** in the project
+* Is necessary insert a file called `.gitignore` in the root of the project
+* In this file is possible to insert that should not come in to versioning
+* This is useful to **files generated automatically** or files that have **sensitive information**
+
+## Undoing all the modifications
+* With the line command `git reset` we can to reset all the modifications made in the project
+* Usually this line command is used with the `--hard` flag
+* All the modifications **commited** and **also the pending** will be deleted
+
+# Branches
+* Section introduction
+
+## What is a branch?
+* The branch is the way that the git **separe the project versions**
+* When a project is built it initialize in the **master branch**
+* Usually each new feature in a project **stays in a separate branch**
+* After the completion the **branchs are unified** to produce the final source code.
+
+## Building and visualizing branches
+* To visualize the brnaches is needed to type `git branch`
+* To build a branch is needed to type `git branch` and the branch name
+* This two operations are most used in day by day.
+
+## Deleting branches
+* It is possible to delete a branch with the flag `-d` or `delete`
+* **It is not common to delete a branch**, normally the project history is saved
+* Usually the delete is used when a branch was build wrong.
+
+## Changing by branch
+* We can change to another branch using the command `git checkout` `b <name>` 
+* This command also is used to dispense a file changes
+* Modifying the branch it is possible to commit all the modifications together, **watchout!**
+
+## Joining branches
+* The code of two distincts branches can be unified using the command `git merge`
+* This is a commnand to list in the list of **most used**
+* Normally is using this command that is received the updates by others devs.
+
+## Stash
+* It is used to save actuals modifications **to follow other solution approach**
+* The command is `git stash`
+* After this command the branch will be reseted to the current version according the reporistory
+
+## Recovering the stash
+* It is possible to check the built stashs using the command `git stash list`
+* And it is possible to recovery the a specific stach wirht the line command `git stacsh <name>`
+* In the way it is possible to continue where the code with the files added to the stash.
+
+## Removing a stash
+* To clean completely a stash is used the command `git stash clear`
+* If it is necessary to delete a specific stash  it used the commnad `git stash drop <name>`
+
+# Using tags 
+* It is possible to build tags using the command `git tag -a <name> -m <message>`
+* The tag is different from stash, the first one sercves as **branch checkpoint **
+* It is used to demarcate a version of the project - stages of development
+
+## Checking and modifying tags
+* It is possible to check a tag using the line command `git show <name>`
+* It is possible to modify the tags with the command `git checkout <name>`
+* In this way it is possible to back or go forward in the branches checkpoionts
+
+## Sending and sharing tags
+* The tags can be **sent to the code repository**, being shared between the developers
+* The line command is `git push origin <name>`
+* If it was needed to send more than 1 tag can use the command `git push origin --tags`
+
+
+# Sharing the update
+
+## Finding the branches
+* New branches are built all the time and **yours git may are note mapping them**
+* With the line commmand `git fetch` you can update by all the branches and tags that you did not reconignezed yet
+* This command is usefull when to use the other person branch, by same project by same project by example.
+
+## Receiving modifications
+* The line command `git pull` is used to **update the local repository** with the remote repository
+* Each branch can be updated with `git pull`
+* This command is used to update the main as like a group work and it is needed to receive anotehr update by other developer.
+
+## Sending modifications
+* The `git push` command do the inverse by pull, this command sends modifications to the remote repository
+* This commnad is useful to **send a specific branch updates ** to another developer
+* Or when a specific task is done and it is needed to send it to the repositories.
+
+## Using the remote
+* Using `git remote` it is possible perform some actions like: add a new repossitory or to track or remove it.
+* When a remote repository is built, it is added to the git with `git remote add origin <linK>` command.
+
+## Working with submodules
+* A submodule is the way that is possible **to work with two or more projects in the same repository**
+* It is possible to add a denpendency in the project, like a library or a framework, although keeping separately booth structures
+* To add a submodule is used the commnand `git submodule add <repository>`
+* To check the submodules is used the commnad `git submodule`
+
+## Updataing the submodules
+* To update a submodule first is needed **to commit the changes** in the submodule
+* And to send to the repository is used the command `git push --recurse-submodules=on-demand`
+* This workflow will make the submodule update only.
+
+# Analisys and inspection
+## Showing informations
+* The command `git show` shows several useful informations about the project
+* This command will show informations of the actual branch and it **commits**
+* The **file modifications** between each commit also are showed
+* It is possible to show the tag informations with `git show <tag>`
+
+## Showing differences
+* The command `git diff` is used to show the differences between the Branches
+* When it is used the differences between the actual branch and the remote will be showed in the terminal
+* It is possible to check the difference between files: `git diff <file> <file_b>`
+
+## Log Summary
+* The command `git shortlog` shows a project Summary
+* Each commit will be unified by **author name**
+* The we can to know which commit was sent to the project and by who.
+
+# Repositoy Management
+## Cleaning the untracked files
+* The `git clean` command will check and clean the non used files
+* i.e, all the files that **are not sued the `git add` command**
+* This command is useful to  use in **automatic generated files**, that ones that get in the way what is important in the project.
+
+## Optimizing the repository
+* The command `git gc` is used to optimize the repository, it is a **garbage collector** abreveation
+* This command identify files that **are not necessaries anymore** and delete them
+* This action will do that the repository be optimzed in **performance** and **space** question.
+
+## Checking the files integrity
+* The command `git fsck` is a abreviationof File System check
+* This instruction check the files integrity and it connectivity
+* In this way, checking possibles **fieles curruption**
+* **It is a routine command**, used to check the files status.
+
+## Reflog
+* The `git reflog` will map all the steps that were done in the repository
+* The `git log`, only store the **commits** that were done
+* The **reflog** be saved until it expires, the stanadard time is 30 days
